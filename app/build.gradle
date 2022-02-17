@@ -1,7 +1,12 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+
 }
+
 
 android {
     compileSdk 32
@@ -55,4 +60,45 @@ dependencies {
 
     implementation 'de.hdodenhof:circleimageview:2.1.0'
 
+
+    def lifecycle_version = "2.2.0"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+
+    def koinVersion = '2.0.1'
+    implementation "org.koin:koin-android:${koinVersion}"
+
+
+    def room_version = "2.2.4"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+
+    def coroutines_version = "1.2.1"
+    /* Coroutines Worker */
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version"
+
+
+
+    /* GSON */    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_version"
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    /* Retrofit */
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.2.1'
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    implementation("io.coil-kt:coil:1.4.0")
+    implementation 'com.epam.coroutinecache:coroutinecache:0.9.6'
+
+    /* Dager Hilt */
+    implementation 'com.google.dagger:hilt-android:2.40.5'
+    kapt 'com.google.dagger:hilt-compiler:2.40.5'
+
+}
+
+kapt {
+    correctErrorTypes true
 }

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.epam.coroutinecache:coroutinecache:0.9.6">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.epam.coroutinecache/coroutinecache/0.9.6/c431ba55dc9f8624802bd8d9fb4cc952ac830dae/coroutinecache-0.9.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.epam.coroutinecache/coroutinecache/0.9.6/40fb48eb6dccac305a34f3f02a94cdfa361442a7/coroutinecache-0.9.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.epam.coroutinecache/coroutinecache/0.9.6/1ba3ede27636dc6da656cf5cb64f3b42cd9746a7/coroutinecache-0.9.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
