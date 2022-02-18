@@ -2,14 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.solucinestpvpos.citricostovar">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/BaseTheme">
-
+        <activity
+            android:name=".ui.ListClientsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true" />
         <activity
             android:name=".ui.RegisterClientActivity"
             android:exported="true"
@@ -25,10 +33,9 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-
-            android:name=".ui.SplashActivity"
-            android:label="Registrar cliente"
-            android:exported="true">
+            android:name=".ui.ListProductsActivity"
+            android:exported="true"
+            android:label="Registrar cliente">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
