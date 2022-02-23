@@ -326,7 +326,7 @@ tools:context=".ui.RegisterClientActivity">
                     android:background="@drawable/round_edittext_background">
 
                     <TextView
-                        android:text="Cuenta"
+                        android:text="Clabe Inter"
                         android:layout_width="100dp"
                         android:layout_height="15dp"
                         android:textAlignment="center"

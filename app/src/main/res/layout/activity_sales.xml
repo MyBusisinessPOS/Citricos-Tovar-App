@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.SalesActivity">
+
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar_ventas"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:layout_scrollFlags="scroll|enterAlways|snap"
+    tools:ignore="MissingConstraints" />
+
+<RelativeLayout
+    android:orientation="horizontal"
+    android:layout_marginTop="60dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:ignore="MissingConstraints">
+    <include layout="@layout/headers_sales" android:visibility="visible"/>
+</RelativeLayout>
+
+<RelativeLayout
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="220dp"
+    android:id="@+id/content_appointments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_ventas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        tools:listitem="@layout/item_sales_cardview" />
+
+    <LinearLayout
+        android:id="@+id/empty_state_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_empty_state"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_item_prods"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium"
+            android:text="No hay productos en la lista" />
+    </LinearLayout>
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

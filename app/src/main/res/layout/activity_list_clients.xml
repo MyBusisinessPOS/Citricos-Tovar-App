@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".ui.ListClientsActivity">
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/row_client"
+        android:id="@+id/rv_clients_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add_clients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_baseline_person_add" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutProgressClients"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <include layout="@layout/layout_progress" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

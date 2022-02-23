@@ -193,7 +193,7 @@ android:layout_height="match_parent"
                         android:layout_marginRight="10dp"
                         android:layout_toRightOf="@+id/countrycode"
                         android:background="@color/transparent"
-                        android:hint="Dirección"
+                        android:hint="Hectarias"
                         android:inputType="textPassword"
                         android:textColor="@color/black"
                         android:textColorHint="@color/black"
@@ -284,7 +284,7 @@ android:layout_height="match_parent"
                     android:background="@drawable/round_edittext_background">
 
                     <TextView
-                        android:text="Cuenta"
+                        android:text="Clabe Inter"
                         android:layout_width="100dp"
                         android:layout_height="15dp"
                         android:textAlignment="center"
@@ -325,7 +325,7 @@ android:layout_height="match_parent"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="Registrar"
+                    android:text="Registrar Productor"
                     android:textColor="@color/white"
                     android:textSize="18dp">
                 </androidx.appcompat.widget.AppCompatButton>

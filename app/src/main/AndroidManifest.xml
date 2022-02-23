@@ -3,6 +3,9 @@
     package="com.solucinestpvpos.citricostovar">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".App"
@@ -13,10 +16,13 @@
         android:supportsRtl="true"
         android:theme="@style/BaseTheme">
         <activity
-            android:name=".ui.ListClientsActivity"
+            android:name=".ui.SalesActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.SplashActivity"
+            android:name=".ui.ListProductsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.ListClientsActivity"
             android:exported="true" />
         <activity
             android:name=".ui.RegisterClientActivity"
@@ -33,7 +39,7 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".ui.ListProductsActivity"
+            android:name=".ui.SplashActivity"
             android:exported="true"
             android:label="Registrar cliente">
             <intent-filter>
